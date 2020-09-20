@@ -12,10 +12,18 @@ class ErrorSource(BaseModel):
     parameter: Optional[str]
 
     @validator("pointer")
-    def validate_json_pointer(cls, value):
+    def validate_json_pointer(cls, value: str) -> str:
+        """Validate JSON pointer
+
+        :param value: input value
+        :type value: str
+        :raises ValueError: when fails validation
+        :return: input value
+        :rtype: str
+        """
         try:
             JsonPointer(value)
         except JsonPointerException as exception:
-            raise ValueError(exception)
+            raise ValueError from exception
 
         return value
