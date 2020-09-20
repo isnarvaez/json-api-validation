@@ -3,7 +3,7 @@ Validates input/output data used in a JSON API.
 
 More info: https://jsonapi.org/ 
 
-## Usage
+## Example usage
 
 ```python
 from json_api_validation import DataDocument
