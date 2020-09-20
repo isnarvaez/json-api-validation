@@ -1,7 +1,7 @@
 # json-api-validation
 Validates input/output data used in a JSON API.
 
-More info: https://jsonapi.org/ 
+Data validation based on [JSON:API v1.0 specification](https://jsonapi.org/).
 
 ## Example usage
 
@@ -14,7 +14,7 @@ data_document = {
     "id": "1",
     "attributes": {
       "title": "Lorem Ipsum",
-      "body": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      "body": "Lorem Ipsum",
       "created": "2020-09-20T14:56:00.000Z",
       "updated": "2020-09-20T14:56:00.000Z"
     },
