@@ -16,7 +16,7 @@ class RelatedLink(BaseModel):
 
 class Link(BaseModel):
     self: Optional[HttpUrl]
-    related: RelatedLink
+    related: Optional[RelatedLink]
     first: Optional[HttpUrl]
     last: Optional[HttpUrl]
     prev: Optional[HttpUrl]
