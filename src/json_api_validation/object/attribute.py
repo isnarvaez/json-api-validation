@@ -1,10 +1,6 @@
 #!/usr/bin/env python3.8
 
 # Copyright: Ismael Narváez Berenjeno
+from typing import TypeVar
 
-from pydantic import BaseModel
-
-
-class Attribute(BaseModel):
-    class Config:
-        extra = "allow"
+Attribute = TypeVar("Attribute")

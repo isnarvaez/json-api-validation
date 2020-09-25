@@ -2,11 +2,23 @@
 
 # Copyright: Ismael Narváez Berenjeno
 
-from typing import List, Union
+from typing import List, Optional, Union
 
-from json_api_validation.document.document import Document
+from pydantic import create_model
+from pydantic.main import ModelMetaclass
+
+from json_api_validation.object.jsonapi import JSONAPI
+from json_api_validation.object.link import Link
+from json_api_validation.object.meta import Meta
 from json_api_validation.object.resource import Resource
 
 
-class DataDocument(Document):
-    data: Union[Resource, List[Resource]]
+def create_data_model(attribute: ModelMetaclass) -> ModelMetaclass:
+    return create_model(
+        "DataDocument",
+        data=(Union[Resource[attribute], List[Resource[attribute]]], ...),
+        meta=(Optional[Meta], None),
+        jsonapi=(Optional[JSONAPI], None),
+        links=(Optional[Link], None),
+        included=(Optional[List[Resource[attribute]]], None),
+    )
