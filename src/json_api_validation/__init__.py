@@ -2,7 +2,7 @@
 
 # Copyright: Ismael Narváez Berenjeno
 
-from json_api_validation.document.data_document import DataDocument
-from json_api_validation.document.error_document import ErrorDocument
+from json_api_validation.document.data_document import create_data_model
+from json_api_validation.document.error_document import create_error_model
 
-__all__ = ["DataDocument", "ErrorDocument"]
+__all__ = ["create_data_model", "create_error_model"]
