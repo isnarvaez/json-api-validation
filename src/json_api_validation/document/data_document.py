@@ -13,9 +13,18 @@ from pydantic.main import ModelMetaclass
 
 
 def create_data_model(
-    data_attributes_model: ModelMetaclass,
-    included_attributes_model: ModelMetaclass,
+    data_attributes_model: Union[ModelMetaclass, type],
+    included_attributes_model: Union[ModelMetaclass, type],
 ) -> ModelMetaclass:
+    """Create data model using custom attributes.
+
+    :param data_attributes_model: Attributes used in top-level data member
+    :type data_attributes_model: Union[ModelMetaclass, type]
+    :param included_attributes_model: Attributes used in top-level included member
+    :type included_attributes_model: Union[ModelMetaclass, type]
+    :return: Class with custom data model
+    :rtype: ModelMetaclass
+    """
     return create_model(
         "DataDocument",
         data=(

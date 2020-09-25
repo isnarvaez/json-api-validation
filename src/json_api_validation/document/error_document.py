@@ -12,6 +12,11 @@ from pydantic.main import ModelMetaclass
 
 
 def create_error_model() -> ModelMetaclass:
+    """Create error model.
+
+    :return: Class with error model
+    :rtype: ModelMetaclass
+    """
     return create_model(
         "ErrorDocument",
         errors=(List[Error], ...),
