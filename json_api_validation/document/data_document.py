@@ -14,7 +14,7 @@ from pydantic.main import ModelMetaclass
 
 def create_data_model(
     data_attributes_model: Union[ModelMetaclass, type],
-    included_attributes_model: Union[ModelMetaclass, type],
+    included_attributes_model: Union[ModelMetaclass, type] = dict,
 ) -> ModelMetaclass:
     """Create data model using custom attributes.
 
