@@ -17,7 +17,9 @@ json-api-validation provides two main functions:
 More info: https://jsonapi.org/format/#document-top-level
 
 ---
+
 :point_up: Each function returns a valid pydantic model.
+
 ---
 
 ### Validate data model using a custom model for attributes:
