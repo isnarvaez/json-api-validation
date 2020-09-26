@@ -1,4 +1,4 @@
-# json-api-validation
+# json-api-validation :snake:
 Validates input/output data using [pydantic](https://pydantic-docs.helpmanual.io/) for JSON API.
 
 Data validation based on [JSON:API v1.0 specification](https://jsonapi.org/).
@@ -16,7 +16,9 @@ json-api-validation provides two main functions:
 
 More info: https://jsonapi.org/format/#document-top-level
 
-Each function returns a valid pydantic model.
+---
+:point_up: Each function returns a valid pydantic model.
+---
 
 ### Validate data model using a custom model for attributes:
 
