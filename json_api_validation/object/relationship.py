@@ -3,16 +3,13 @@
 # Copyright: Ismael Narváez Berenjeno
 from typing import List, Optional, Union
 
-from pydantic import BaseModel
-
 from json_api_validation.object.link import Link
 from json_api_validation.object.meta import Meta
-from json_api_validation.object.resource_identifier import (
-    ResourceIdentifier,
-)
+from json_api_validation.object.resource_identifier import ResourceIdentifier
+from pydantic import BaseModel
 
 
-class Relantionship(BaseModel):
+class Relationship(BaseModel):
     links: Optional[Link]
     data: Optional[Union[ResourceIdentifier, List[ResourceIdentifier]]]
     meta: Optional[Meta]
