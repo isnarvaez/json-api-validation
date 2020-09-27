@@ -18,7 +18,7 @@ More info: https://jsonapi.org/format/#document-top-level
 
 ---
 
-:point_up: Each function returns a valid pydantic model.
+:point_up: Functions return valid pydantic models.
 
 ---
 
