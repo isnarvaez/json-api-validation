@@ -1,6 +1,7 @@
 #!/usr/bin/env python3.8
 
 # Copyright: Ismael Narváez Berenjeno
+
 from typing import Optional
 
 from jsonpointer import JsonPointer, JsonPointerException

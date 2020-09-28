@@ -1,6 +1,7 @@
 #!/usr/bin/env python3.8
 
 # Copyright: Ismael Narváez Berenjeno
+
 from typing import Dict, Generic, Optional
 
 from json_api_validation.object.attribute import Attribute

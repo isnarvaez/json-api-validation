@@ -1,6 +1,7 @@
 #!/usr/bin/env python3.8
 
 # Copyright: Ismael Narváez Berenjeno
+
 from typing import List, Optional, Union
 
 from json_api_validation.object.link import Link
