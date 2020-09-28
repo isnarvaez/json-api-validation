@@ -4,14 +4,24 @@ Validates input/output data using [pydantic](https://pydantic-docs.helpmanual.io
 Data validation based on [JSON:API v1.0 specification](https://jsonapi.org/).
 
 # Table of Contents
-1. [Example usage](#1)
+1. [Installation](#1)
+2. [Example usage](#2)
 
-    1.1. [Validate data](#1.1)
-    1.2. [Validate errors](#1.2)
+    2.1. [Validate data](#2.1)
+
+    2.2. [Validate errors](#2.2)
 
 
+## 1. Installation<a name="2"></a>
 
-## 1. Example usage <a name="1"></a>
+```console
+
+pip install json-api-validation
+
+```
+
+
+## 2. Example usage <a name="2"></a>
 
 json-api-validation provides two main functions:
 
@@ -26,7 +36,7 @@ More info: https://jsonapi.org/format/#document-top-level
 
 ---
 
-### 1.1 Validate data<a name="1.1"></a>
+### 2.1 Validate data<a name="2.1"></a>
 
 #### Validate data using a custom model for attributes:
 
@@ -379,7 +389,7 @@ print(data_document.schema_json(indent=2))
 }
 
 ```
-### 1.2 Validate errors<a name="1.2"></a>
+### 2.2 Validate errors<a name="2.2"></a>
 
 ```python
 
