@@ -14,7 +14,7 @@ long_description = (
 
 setup(
     name="json-api-validation",
-    version="0.0.1",
+    version="0.0.2",
     description=description,
     long_description=long_description,
     long_description_content_type="text/markdown",
