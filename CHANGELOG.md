@@ -19,6 +19,8 @@
 * (model): add docstrings
 #### Docs
 
+* add installation steps
+* add CHANGELOG
 * add errors documentation to README
 * fix grammar of README
 * fix note section
